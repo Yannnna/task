@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html ng-app="gitHubSts">
+	<head>
+	 <script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="core.js"></script>
+	</head>
+	<body  ng-controller="myCtrl">
+		 <div>
+			<p>Current status: {{currentStatus}}</p>
+		<div>
+		<div>
+			<p>Availability:</p>
+			<div style="padding-left: 50px">
+				<div ng-repeat="obj in availability">
+					<span style="padding-right: 5px">{{obj.date}}:</span>
+					<span style="padding-right: 5px">{{obj.time}}:</span>
+					<span style="padding-right: 5px">{{obj.status}}:</span>
+					<span>{{obj.body}}</span>
+				</div>
+			</div>
+		 </div>
+		 
+	</body>
+</html>
